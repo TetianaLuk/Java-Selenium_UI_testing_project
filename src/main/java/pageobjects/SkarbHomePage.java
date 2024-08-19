@@ -34,18 +34,24 @@ public class SkarbHomePage {
     }
 
     public SkarbHomePage clickOnSelectWebSiteLanguage() {
-        WebElementUtils.clickOnButton(selectWebSiteLanguageButton);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", selectWebSiteLanguageButton);
+        js.executeScript("arguments[0].click();", selectWebSiteLanguageButton);
         return this;
     }
 
     public SkarbHomePage clickOnSelectUkrLanguage() {
-        WebElementUtils.clickOnButton(selectUkrLanguageButton);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", selectUkrLanguageButton);
+        js.executeScript("arguments[0].click();", selectUkrLanguageButton);
         return this;
     }
 
     @Step("Click on 'Create a new user' button")
     public SkarbRegistrationPage clickOnCreateNewUser() {
-        WebElementUtils.clickOnButton(createNewUserButton);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", createNewUserButton);
+        js.executeScript("arguments[0].click();", createNewUserButton);
         return new SkarbRegistrationPage(driver);
     }
 
