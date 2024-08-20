@@ -17,7 +17,7 @@ Before you can run this project, you must have the following software installed 
 ## 🛠️ Installation
 1. Clone this repository to your local machine.   
    ```sh
-   git clone https://github.com/TetianaLuk/repo1.git
+   git clone https://github.com/TetianaLuk/Java-Selenium_UI_testing_project.git
    ```
 2. Navigate to the project directory using the command line.
 3. Install the dependencies.   
